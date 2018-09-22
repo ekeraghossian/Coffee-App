@@ -1,12 +1,16 @@
-<div class="row">
-  <div class="col">
+
+  <div class="row">
+    <div class="col">
       <label for="">Please enter your name:</label>
+    </div>
   </div>
-</div>
+  <div class="row">
+    <div class="col">
+      <input type="text" class="form-control" (input)="onUpdateUserName($event)">
+    </div>
+  </div>
 <div class="row">
   <div class="col">
-    <input type="text">
+    <p>Nice to see you {{user.name}}. Please scroll ↓</p>
   </div>
 </div>
-
-

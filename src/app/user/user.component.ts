@@ -12,6 +12,11 @@ export class UserComponent implements OnInit {
   constructor() { }
 
   ngOnInit() {
+    this.user = new User('');
   }
 
+  onUpdateUserName(event: Event){
+    this.user.name = (<HTMLInputElement>event.target).value;
+    console.log((<HTMLInputElement>event.target).value);
+  }
 }
