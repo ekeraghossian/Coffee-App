@@ -1,10 +1,24 @@
-import { Component } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import { User } from './user/user.model';
+import { CurrentUserService } from './shared/current-user-data.service';
 
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit {
   title = 'coffee-app-gui';
+  //currentUser: User;
+  //users: User[];
+
+  constructor(private currentUserService: CurrentUserService){
+    
+  }
+
+  ngOnInit(){
+    // this.currentUser = this.currentUserService.getUser();
+    // console.log(this.currentUser);
+  }
+
 }

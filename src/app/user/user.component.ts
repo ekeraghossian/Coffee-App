@@ -1,5 +1,4 @@
-import { Component, OnInit, Input } from '@angular/core';
-import { User } from './user.model';
+import { Component, OnInit } from '@angular/core';
 
 @Component({
   selector: 'app-user',
@@ -7,16 +6,10 @@ import { User } from './user.model';
   styleUrls: ['./user.component.css']
 })
 export class UserComponent implements OnInit {
-  @Input() user: User;
 
   constructor() { }
 
   ngOnInit() {
-    this.user = new User('');
   }
 
-  onUpdateUserName(event: Event){
-    this.user.name = (<HTMLInputElement>event.target).value;
-    console.log((<HTMLInputElement>event.target).value);
-  }
 }

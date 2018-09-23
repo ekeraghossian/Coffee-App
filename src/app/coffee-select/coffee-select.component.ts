@@ -1,15 +1,25 @@
-import { Component, OnInit } from '@angular/core';
+import { Component, OnInit, OnChanges, Input } from '@angular/core';
+import { CurrentUserService } from '../shared/current-user-data.service';
+import { User } from '../user/user.model';
 
 @Component({
   selector: 'app-coffee-select',
   templateUrl: './coffee-select.component.html',
   styleUrls: ['./coffee-select.component.css']
 })
-export class CoffeeSelectComponent implements OnInit {
+export class CoffeeSelectComponent implements OnInit, OnChanges {
+  @Input() user: User;
 
-  constructor() { }
+  constructor(private currentUserService: CurrentUserService) { }
 
   ngOnInit() {
+    this.user = this.currentUserService.getUser();
+    console.log(this.user);
+  }
+
+  ngOnChanges(){
+    this.user = this.currentUserService.getUser();
+    console.log(this.user);
   }
 
 }

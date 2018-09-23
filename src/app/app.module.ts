@@ -6,6 +6,7 @@ import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
 import { CoffeeSelectComponent } from './coffee-select/coffee-select.component';
+import { CurrentUserService } from './shared/current-user-data.service';
 
 @NgModule({
   declarations: [
@@ -18,7 +19,7 @@ import { CoffeeSelectComponent } from './coffee-select/coffee-select.component';
   imports: [
     BrowserModule
   ],
-  providers: [],
+  providers: [CurrentUserService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
