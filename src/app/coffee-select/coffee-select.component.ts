@@ -7,19 +7,13 @@ import { User } from '../user/user.model';
   templateUrl: './coffee-select.component.html',
   styleUrls: ['./coffee-select.component.css']
 })
-export class CoffeeSelectComponent implements OnInit, OnChanges {
+export class CoffeeSelectComponent implements OnInit {
   @Input() user: User;
 
   constructor(private currentUserService: CurrentUserService) { }
 
   ngOnInit() {
     this.user = this.currentUserService.getUser();
-    console.log(this.user);
-  }
-
-  ngOnChanges(){
-    this.user = this.currentUserService.getUser();
-    console.log(this.user);
   }
 
 }
