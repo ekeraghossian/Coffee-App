@@ -12,4 +12,8 @@ export class CurrentUserService {
     getUser() {
         return this.user;
     }
+
+    setVolunteer(user: User) {
+        this.user.isVolunteer = true;
+    }
 }

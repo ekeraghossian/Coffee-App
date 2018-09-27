@@ -14,7 +14,7 @@ import { CurrentUserService } from './services/current-user-data.service';
     UserComponent,
     UsersComponent,
     LoginComponent,
-    CoffeeSelectComponent
+    CoffeeSelectComponent,
   ],
   imports: [
     BrowserModule

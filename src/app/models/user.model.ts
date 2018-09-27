@@ -1,7 +1,9 @@
+import { Drink } from './drink.model';
+
 export class User {
     name: string;
     points: number;
-    // drink: Drink;
+    drink: Drink;
     isVolunteer: boolean;
 
     constructor(name: string) {

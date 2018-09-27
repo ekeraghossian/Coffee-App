@@ -15,5 +15,4 @@ export class CoffeeSelectComponent implements OnInit {
   ngOnInit() {
     this.user = this.currentUserService.getUser();
   }
-
 }
