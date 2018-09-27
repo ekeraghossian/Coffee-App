@@ -6,7 +6,7 @@ import { UserComponent } from './user/user.component';
 import { UsersComponent } from './users/users.component';
 import { LoginComponent } from './login/login.component';
 import { CoffeeSelectComponent } from './coffee-select/coffee-select.component';
-import { CurrentUserService } from './shared/current-user-data.service';
+import { CurrentUserService } from './services/current-user-data.service';
 
 @NgModule({
   declarations: [

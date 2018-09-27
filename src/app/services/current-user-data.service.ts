@@ -1,15 +1,15 @@
-import { User } from '../user/user.model';
+import { User } from '../models/user.model';
 import { Injectable } from '@angular/core';
 
 @Injectable()
-export class CurrentUserService{
+export class CurrentUserService {
     user: User = new User('');
 
-    setUser(user: User){
+    setUser(user: User) {
         this.user = user;
     }
 
-    getUser(){
+    getUser() {
         return this.user;
     }
 }

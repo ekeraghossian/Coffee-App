@@ -1,6 +1,6 @@
 import { Component, OnInit, OnChanges, Input } from '@angular/core';
-import { CurrentUserService } from '../shared/current-user-data.service';
-import { User } from '../user/user.model';
+import { CurrentUserService } from '../services/current-user-data.service';
+import { User } from '../models/user.model';
 
 @Component({
   selector: 'app-coffee-select',
