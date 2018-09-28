@@ -10,8 +10,6 @@ import { CurrentUserService } from '../services/current-user-data.service';
 export class LoginComponent implements OnInit {
   user: User;
 
-  // Waarom heeft deze constructor een input parameter? Het lijkt erop alsof er niks mee wordt gedaan.
-  // Kan currenUserService niet gewoon als variabele in de class worden gedeclared?
   constructor(private currentUserService: CurrentUserService) { }
 
   ngOnInit() {
