@@ -10,4 +10,12 @@ export class User {
         this.name = name;
         this.points = 100;
     }
+
+    setDrink(drink: Drink) {
+        this.drink = drink;
+    }
+
+    setVolunteer(boolean: boolean) {
+        this.isVolunteer = boolean;
+    }
 }
